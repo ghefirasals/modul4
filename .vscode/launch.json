@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "modul_4baru",
+            "cwd": "modul_4baru",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "modul_4baru (profile mode)",
+            "cwd": "modul_4baru",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "modul_4baru (release mode)",
+            "cwd": "modul_4baru",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
