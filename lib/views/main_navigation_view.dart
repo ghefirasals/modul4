@@ -5,6 +5,8 @@ import 'home_content_view.dart';
 import 'todo_view.dart';
 import 'cart_view.dart';
 import 'menu/menu_crud_view.dart';
+import 'location_view.dart';
+import 'network_location_view.dart';
 import '../services/cart_service.dart';
 
 class MainNavigationView extends StatelessWidget {
@@ -23,6 +25,8 @@ class MainNavigationView extends StatelessWidget {
           TodoView(),
           MenuCrudView(),
           CartView(),
+          LocationView(),
+          NetworkLocationView(),
         ],
       ),
       bottomNavigationBar: Container(
@@ -143,6 +147,22 @@ class MainNavigationView extends StatelessWidget {
                 ],
               ),
               label: 'Keranjang',
+            ),
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.gps_fixed),
+              activeIcon: Icon(
+                Icons.gps_fixed,
+                color: Theme.of(context).primaryColor,
+              ),
+              label: 'GPS',
+            ),
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.wifi),
+              activeIcon: Icon(
+                Icons.wifi,
+                color: Theme.of(context).primaryColor,
+              ),
+              label: 'Network',
             ),
           ],
         ),
